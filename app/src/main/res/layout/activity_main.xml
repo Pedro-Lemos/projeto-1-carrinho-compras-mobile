@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/branco"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tituloLayout"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="Lojinha do Zé"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:textSize="30sp"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/imgCarrinho"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/carrinhologo" />
+
+    <TextView
+        android:id="@+id/txtCampos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:text="Selecione os itens desejados para compra:" />
+
+    <CheckBox
+        android:id="@+id/txtArroz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/laranja"
+        android:text="Arroz 1kg. (R$ 2,69)" />
+
+    <CheckBox
+        android:id="@+id/txtLeite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/laranja"
+        android:text="Leite longa vida (R$ 2,70)" />
+
+    <CheckBox
+        android:id="@+id/txtCarne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/laranja"
+        android:text="Carne Friboi (R$16,70)" />
+
+    <CheckBox
+        android:id="@+id/txtFeijao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/laranja"
+        android:text="Feijão Carioquinha 1kg. (R$3,38)" />
+
+    <CheckBox
+        android:id="@+id/txtRefrigerante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:buttonTint="@color/laranja"
+        android:text="Refrigerante Coca-Cola 2L. (R$3,00)" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <Button
+        android:id="@+id/btnTotalCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/branco"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:backgroundTint="@color/laranja"
+        android:text="Total da compra" />
+
+    <TextView
+        android:id="@+id/txtResultadoCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</LinearLayout>
